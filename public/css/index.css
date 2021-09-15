@@ -26,6 +26,19 @@ form {
     margin-bottom: 2%;
 }
 
+#addDataForm {
+    flex-wrap: wrap;
+}
+
+.box {
+    width: 100%;
+    margin-bottom: 2%;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
 select {
     font-size: 0.75em;
 }

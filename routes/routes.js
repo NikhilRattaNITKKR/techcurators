@@ -13,7 +13,7 @@ app.get("/", function(req, res){              //Route for home
 app.post("/add_data", async (request, response) => {                            //Route to get all data
    
     let id=getId(request.body.sheet);                                           //extracting the sheet id from url
-    let range="Questions!A2:H";
+    let range=request.body.name+"!A2:H";
     try{ 
     fs.readFile('credentials.json', (err, content) => {                         //reading the sheet using functions defined in utility
         if (err) return console.log('Error loading client secret file:', err);

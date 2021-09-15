@@ -53,7 +53,7 @@ const readData=(auth,id,range)=> {
       const rows = res.data.values;
       if (rows.length) {
           let dataArr=[];
-          // Print columns A and E, which correspond to indices 0 and 4.
+         
           rows.map((row) => {
             let question={};
             question.topic=row[0];

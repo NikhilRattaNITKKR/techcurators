@@ -10,9 +10,15 @@
 <body>
     <div id="main">
     <h1>TECHCURATORS ASSIGNMENT</h1>
-    <form action="/add_data" method="POST">
+    <form action="/add_data" method="POST" id="addDataForm">
+    <div class="box">
     <label for="sheet">Enter sheet link:</label>
     <input type="text" name="sheet" id="sheet" autocomplete="off" required>
+</div>
+<div class="box">
+    <label for="sheet">Enter name of first Sheet</label>
+    <input type="text" name="name" id="name" autocomplete="off" required>
+</div>
     <button type="submit">Enter</button>
 </form>
     <form action="/get_data_by_difficulty" >
